@@ -52,5 +52,6 @@ $(function(){
     $("#startGame").on("click", playGame);
     $("#tbnGuess").on("click", handleGuess);
     $("#playAgain").on("click", setupGame);
+    $("#quit").on("click", setupGame);
     setupGame();
 });
