@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <style>
+        h2 {
+            color: #ffffff;
+        }
+        
+        .display {
+            color: #dddddd;
+            padding: 30px;
+        }
+        
+        .tempD {
+            font-size: 100px;
+        }
+    
+        .cardStyle{
+            width:30%;
+            color: #ffffff;
+            margin: 1%;
+            padding: 3px;
+            border-radius: 20px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('/Users/alexhughes/Desktop/ClassWork/Day3/weatherly/weather/bbground');">
+
+    <!--nav bar goes here with the title and the dropdown menu-->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <h2>Weatherly Title</h2>
+            </div>
+        </div>
+
+        <!--end nav bar -->
+        
+        <!--start of display of main day  -->
+        <div class="container display" style="background: #000000; border-radius: 100px;">
+
+            <div class="row">
+                <div class="col-md-8">Chance For Rain-</div>
+                <div class="col-md-4">City:</div>
+
+                <div class="col-md-12 text-center"><span class="tempD">Temp</span>
+                </div>
+                <div class="col-md-6">Hi:</div>
+                <div class="col-md-6">Low</div>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid"
+        <!-- end of main day display -->
+
+        <!-- time goes here -->
+
+        <div class="col-md-12" style="background: #888; margin: 1.5%;">Current Time </div>
+        </div>
+        <!-- Start of cards -->
+<div class="container">
+        <div class="card-deck-wrapper" style="margin: 20px;">
+            <div class="card-deck">
+                <!--start Card-->
+                <div class="card cardStyle " style="background-image: url('/Users/alexhughes/Desktop/ClassWork/Day3/weatherly/weather/Rain-on-glass-wallpaper-HD-768x480.jpg');">
+                    
+                    <div class="card-img-overlay">
+                        <h3 class="card-title text-center">City Name</h3>
+                        <h1 class="card-title text-center">72</h1>
+                        <span>Hi:</span>
+                        <span>Low:</span><br />
+                        <br />
+                        <br />
+                        <span>Chance for Rain:</span>
+                    </div>
+                    <!-- card img overlay -->
+                </div>
+                <!-- card -->
+  
+
+            </div>
+            <!-- card deck -->
+
+        </div>
+        <!--wrapper div-->
+
+
+    </div>
+</body>
+
+
+
+
+</html>
