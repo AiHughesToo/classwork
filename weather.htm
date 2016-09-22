@@ -13,7 +13,32 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous">  </script>
+<script>
 
+
+function darksky_Complete(result) {
+    console.log(result.currently.summary);
+    var hour1 = result.hourly.data[0]
+    var time = new Date(hour1.time * 1000);
+    console.log("Time:" + time.toLocaleString());
+}
+
+
+$(function(){
+
+        var request = {
+
+        url: "https://api.darksky.net/forecast/4c175e0918482d7e59b0b9e748006844/37.8267,-122.4233",
+        dataType: "jsonp",
+        success: darksky_Complete
+        };
+
+       $.ajax(request);
+});
+
+
+
+ </script>
     <style>
         h2 {
             color: #ffffff;
@@ -63,7 +88,7 @@
 </head>
 
 <body style="background-image: url('/Users/alexhughes/Desktop/ClassWork/Day3/weatherly/weather/bbground4.jpg');">
-
+<script>var googleAPI="AIzaSyDo5sAWg49d2_TnmNXSLWcH4FyurjforJg";</script>
     <!--nav bar goes here with the title and the dropdown menu-->
 
     <nav class="navbar navbar-inverse navbar-static-top">
@@ -104,7 +129,7 @@
 
         <!-- time goes here -->
 
-        <div class="col-md-12 text-right" style="background: #333; color: #eee;">Current Time: </div>
+        <div class="col-md-12 text-right" style="background: #333; color: #eee;">Current Time:</div>
         </div>
         <!-- Start of cards -->
 <div class="container">
